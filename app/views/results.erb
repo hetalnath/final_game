@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+  <!-- links to CSS stylesheet in the public directory -->
+  <link rel="stylesheet" href="/css/index.css" >
+  
+  <style>
+        @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+html, body {
+    background:url("https://static.pexels.com/photos/66997/pexels-photo-66997.jpeg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+    font-family: 'Raleway', cursive;
+}
+
+
+.results-page {
+    text-align: center;
+    color: white;
+}
+
+
+.game-result {
+    margin-top: 15vmax;
+    font-size: 6vmax;
+}
+
+.return-link {
+  margin-top:3vmax;
+}
+
+a {
+    background: transparent;
+    color: #b3e6ff;
+    font-size:30px;
+    border-radius:12px;
+    border:2px solid teal;
+    height:5vmax;
+    width:10vmax;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-top:3vmax;
+}
+
+
+a:hover {
+    background-color:grey;
+    color:white;
+}
+    </style>
+  
+</head>
+<body> 
+
+  <div class="results-page">
+    
+    <div class="game-result">
+    <%= @game1.game %><br>
+    </div>
+    
+    <div class="return-link">
+    <a href="/">Play again?</a>
+    </div>
+  </div>
+
+</body>
+</html>

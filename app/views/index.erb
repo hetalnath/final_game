@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title</title>
+  <!-- links to CSS stylesheet in the public directory -->
+  <link rel="stylesheet" href="/css/index.css" >
+<style>
+        @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+html, body {
+    background:url("https://static.pexels.com/photos/66997/pexels-photo-66997.jpeg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+    font-family: 'Raleway', cursive;
+}
+
+
+.homepage {
+    text-align: center;
+    color: #80ffaa
+}
+
+
+.homepage-tagline {
+    color: #ce99ff;
+    font-size: 1.789vmax;
+}
+
+.homepage-header {
+    margin-top: 15vmax;
+    font-size: 2.5vmax;
+}
+
+.header {
+    margin-bottom: 0;
+}
+
+input[type=submit] {
+    background: transparent;
+    color: #b3e6ff;
+    font-size:12px;
+    border-radius:12px;
+    border:2px solid teal;
+    height:40px;
+    width:100px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-top:3vmax;
+}
+
+input[type=submit]:hover {
+    background-color:grey;
+    color:white;
+}
+    </style>
+</head>
+<body> 
+
+  <div class="homepage">
+    <div class="homepage-header">
+    <h1 class="header">Rock, paper, scissors!</h1>
+    </div>
+    <div class="homepage-tagline">
+      <p>choose rock, paper, or scissors!</p>
+    </div>
+    
+    <div class="homepage-form">
+    <form method="POST" action="/results">
+      <input type="text" name="choice"><br>
+      <input type="submit" value="Submit">
+    </form>
+    </div>
+  </div>
+
+</body>
+</html>
+
